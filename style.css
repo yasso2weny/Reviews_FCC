@@ -1,0 +1,139 @@
+:root {
+  --bg-clr: #f1f5f8;
+  --primary-clr: #49a6ea;
+  --card-bg-clr: #ffffff;
+  --secondary-clr: #102b42;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  height: 100vh;
+  background-color: var(--bg-clr);
+  font-family: sans-serif;
+}
+
+#title {
+  color: var(--secondary-clr);
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-clr);
+  text-decoration-thickness: 6px;
+  text-underline-offset: 14px;
+}
+
+#carousel-container {
+  background-color: var(--card-bg-clr);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 45px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px black;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+}
+
+.name, .position, .description {
+  color: var(--secondary-clr);
+}
+
+.name {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.position {
+  color: var(--primary-clr);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+#bak-btn, #fwd-btn {
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#bak-btn {
+  background-image: url('images/right-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  transform: rotate(180deg);
+  border: none;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#fwd-btn {
+  background-image: url('images/right-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#sp-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-clr);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.4s ease;
+}
+
+#sp-btn:hover {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: var(--primary-clr);
+  border: 1px solid var(--primary-clr);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review {
+  display: none; 
+}
